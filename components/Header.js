@@ -80,32 +80,7 @@ export default function Header() {
 
   return (
     <header className="w-full">
-      {/* Announcement Bar */}
-      <div className="bg-orange-500 text-white relative">
-        <div className="flex items-center justify-between px-4 py-2">
-          <button
-            onClick={prevSlide}
-            className="p-1 hover:bg-orange-600 rounded transition-colors"
-            aria-label="Previous announcement"
-          >
-            <ChevronLeft size={20} />
-          </button>
-
-          <div className="text-center flex-1">
-            <p className="text-[14px] md:text-base -mt-1 font-light">
-              {announcements[currentSlide]}
-            </p>
-          </div>
-
-          <button
-            onClick={nextSlide}
-            className="p-1 hover:bg-orange-600 rounded transition-colors"
-            aria-label="Next announcement"
-          >
-            <ChevronRight size={20} />
-          </button>
-        </div>
-      </div>
+      
 
       {/* Main Navigation */}
       <nav className="bg-white border-b border-gray-200">
